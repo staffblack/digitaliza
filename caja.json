@@ -1,0 +1,69 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "empresa",
+            "type": "number"
+        },
+        {
+            "name": "sucursal",
+            "type": "number"
+        },
+        {
+            "name": "departamento",
+            "type": "number"
+        },
+        {
+            "name": "sub_departamento",
+            "type": "number"
+        },
+        {
+            "name": "detalle",
+            "type": "text"
+        },
+        {
+            "name": "sub_detalle",
+            "type": "text"
+        },
+        {
+            "name": "fecha_desde",
+            "type": "date"
+        },
+        {
+            "name": "fecha_hasta",
+            "type": "date"
+        },
+        {
+            "name": "fecha_vencimiento",
+            "type": "date"
+        },
+        {
+            "name": "secuencia_desde",
+            "type": "number"
+        },
+        {
+            "name": "secuencia_hasta",
+            "type": "number"
+        },
+        {
+            "name": "estado",
+            "type": "number"
+        },
+        {
+            "name": "codigo_verificacion",
+            "type": "text"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}

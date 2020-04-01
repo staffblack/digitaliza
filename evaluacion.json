@@ -1,0 +1,35 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "n_preguntas",
+            "type": "number"
+        },
+        {
+            "name": "id_grupo",
+            "type": "text"
+        },
+        {
+            "name": "id_asignacion",
+            "type": "text"
+        },
+        {
+            "name": "id_docente",
+            "type": "text"
+        }
+        
+        
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}

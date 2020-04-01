@@ -1,0 +1,25 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "id_empresa",
+            "type": "number"
+        },        {
+            "name": "nombre_sucursal",
+            "type": "text"
+        }
+        
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}

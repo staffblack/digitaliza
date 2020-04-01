@@ -1,0 +1,42 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "email",
+            "type": "text"
+        },
+        {
+            "name": "password",
+            "type": "password"
+        },
+        {
+            "name": "name",
+            "type": "text"
+        },
+        {
+            "name": "password",
+            "type": "email"
+        },
+        {
+            "name": "perfil",
+            "type": "select",
+            "options": {
+                "Docente": "Docente",
+                "Estudiante": "Estudiante"
+            }
+        }
+        
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}

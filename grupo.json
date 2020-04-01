@@ -1,0 +1,35 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "nombre",
+            "type": "text"
+        },
+        
+        {
+            "name": "periodo_electivo",
+            "type": "select",
+            "options": {
+                "1": "2020-01",
+                "2": "2020-02"
+            }
+        },
+        {
+            "name": "id_docente",
+            "type": "text"
+        }
+        
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}

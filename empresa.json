@@ -1,0 +1,25 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "nombre",
+            "type": "text"
+        },
+        {
+            "name": "descripcion",
+            "type": "text"
+        }
+        
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}

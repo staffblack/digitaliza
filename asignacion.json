@@ -1,0 +1,38 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type": "number"
+        },
+        {
+            "name": "titulo",
+            "type": "text"
+        },
+        {
+            "name": "id_grupo",
+            "type": "text"
+        },
+        {
+            "name": "descripcion",
+            "type": "text"
+        },
+        {
+            "name": "archivo",
+            "type": "file"
+        },
+        {
+            "name": "id_docente",
+            "type": "text"
+        }
+        
+    ],
+    "foreign_keys": [
+        {
+            "column": "id",
+            "references": "id",
+            "on": "users",
+            "onDelete": "cascade"
+        }
+    
+    ]
+}
